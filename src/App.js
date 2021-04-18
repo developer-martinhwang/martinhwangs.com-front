@@ -13,6 +13,7 @@ import techVenue from './components/pages/techVenue/techVenue';
 import projectVenue from './components/pages/ projectVenue/projectVenue'
 import developerVenue from './components/pages/developerVenue';
 import nomatchpage from './components/pages/nomatchpage';
+import profile from './components/pages/profile/profile';
 // Layout Component
 import SlideHeader from './components/layout/slideHeader/SlideHeader'
 
@@ -33,6 +34,7 @@ class App extends Component {
               <div>
                 <Switch>
                   <Route exact path="/" component={home}/>
+                  <Route exact path="/profile" component={profile}/>
                   <AuthRoute exact path="/techvenue" component={techVenue}/>
                   <Route exact path="/projectvenue" component={projectVenue}/>
                   <Route exact path="/developervenue" component={developerVenue}/>
